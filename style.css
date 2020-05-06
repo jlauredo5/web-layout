@@ -1,0 +1,83 @@
+
+body {
+    font-family: 'Titillium Web', Calibri, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+input {
+	width: 400px;
+}
+
+.module {
+  --x: 0px;
+  --y: 0px;
+  background-image: url('img/map.png');
+  background-position: var(--x) var(--y);
+  width: 100%;
+  height: 1000px;
+}
+
+/*.nav-section{
+	transform: translateY(20px);
+}*/
+
+.nav-section  ul {
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: right;
+    padding: 0;
+    margin:0;
+}
+.nav-section ul li {
+    list-style: none;
+    display: inline-block;
+}
+.nav-section ul li a {
+    display: block;
+    text-decoration: none;
+    margin: 0;
+    padding: 25px 25px;
+
+    font-size: 20px;
+    font-weight: 300;
+    color: #323642;
+    transition: background-color 0.5s ease;
+}
+.nav-section ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+.side-nav  {
+	margin-top: 30px;
+	display: flex;
+	justify-content: flex-end;
+	transform: translateX(-30px);
+
+}
+
+.side-nav   ul {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 0;
+    border-radius: 10px;
+}
+.side-nav  ul li {
+    list-style: none;
+    display: block;
+}
+.side-nav  ul li a {
+	text-align: center;
+    display: block;
+    text-decoration: none;
+    padding: 25px 25px;
+    font-size: 20px;
+    font-weight: 300;
+    color: #323642;
+    transition: background-color 0.5s ease;
+}
+.side-nav  ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+.top{
+	border-radius: 10px 10px 0px 0px;
+}
+.bottom{
+	border-radius: 0px 0px 10px 10px;
+}
