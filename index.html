@@ -1,54 +1,69 @@
 <!DOCTYPE html>
 <html>
     <head>
+        
         <meta charset="utf-8">
-
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
         <link rel="stylesheet" type="text/css" href="style.css">
-
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-
         <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+<script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqB25bZu8H9JKIqfQ_wkNENP2lbk8MhvA&callback=initMap">
+</script>
+        
+
 
         <title>Navigation Bar</title>
     
     </head>
     <body>
 
-    <div class="module" id="module"> 
+    <!-- <div class="module" id="module">  -->
+
+<nav class="navbar navbar-expand-md navbar-light fixed-top transp">
+	<div class="container-fluid clearfix marg">
+
+  <div class="logo" id="grad1"><a class="navbar-brand center" style="color: white; font-weight: bold;" href="#">Kamarazzi</a></div>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  
+  <div class="collapse navbar-collapse " id="collapsibleNavbar">
+  	<form class="form-inline ml-auto" action="/action_page.php">
+       <input class="form-control mr-sm-2 transp2" type="text" placeholder="Search address">
+       <button class="btn oval-btn transp2" type="submit">Search</button>
+    </form>
+    <ul class="navbar-nav ml-4">
+      <li class="nav-item">
+        <a class="nav-link" href="#">NE</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Login</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Signup</a>
+      </li>    
+    </ul>
+  </div> 
+  </div> 
+</nav>
+<!-- <br> -->
 
 
 
+<div id="map"></div>
+        
 
+<script src="mapbackground.js"></script>
 
-        <div class="nav-section">            	
-                <ul>
-                	<input type="text" name="address" placeholder="Search address">
-                    <li><a href="#">EN</a></li>
-                    <li><a href="#">Login</a></li>
-                </ul>
-        </div> 
-        <div class="side-nav">
-                <ul>
-                    <li ><a class="top" href="#">my videos</a></li>
-                    <li ><a class="bottom" href="#">my schedule</a></li>
-                </ul>
-        </div>         
-    </div>
-
-
-
-
-
-
-
-
-
-    <script src="mapbackground.js"></script>
+     
+    
     </body>   
 </html>
+
+
+<!-- AIzaSyCqB25bZu8H9JKIqfQ_wkNENP2lbk8MhvA -->
